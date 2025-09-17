@@ -9,13 +9,21 @@ import { Skills } from "@/components/resume/Skills";
 const Index = () => {
   useEffect(() => {
     // Update document title
-    document.title = "João Silva Santos - Desenvolvedor Web Full Stack";
+    document.title = "Emmanuel Duarte de Oliveira - Desenvolvedor em Formação";
     
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute('content', 
-        'Currículo profissional de João Silva Santos, Desenvolvedor Web Full Stack especializado em React, Node.js e TypeScript. 3+ anos de experiência criando aplicações web modernas.'
+        'Currículo profissional de Emmanuel Duarte de Oliveira, estudante de Ciências da Computação especializado em Python, automação e desenvolvimento web. Cuiabá, MT.'
+      );
+    }
+    
+    // Update meta keywords
+    const metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (metaKeywords) {
+      metaKeywords.setAttribute('content', 
+        'Emmanuel Duarte, desenvolvedor, Python, automação WhatsApp, Cuiabá, ciência da computação, UFMT, currículo, programador'
       );
     }
   }, []);
@@ -45,10 +53,10 @@ const Index = () => {
         
         <footer className="mt-12 pt-8 border-t border-border text-center text-foreground-secondary">
           <p className="text-sm">
-            © 2024 João Silva Santos. Currículo criado com React, TypeScript e Tailwind CSS.
+            © 2024 Emmanuel Duarte de Oliveira. Currículo criado com React, TypeScript e Tailwind CSS.
           </p>
           <p className="text-xs mt-2 opacity-75">
-            Última atualização: {new Date().toLocaleDateString('pt-BR')}
+            Última atualização: {new Date().toLocaleDateString('pt-BR')} | Cuiabá, MT
           </p>
         </footer>
       </main>

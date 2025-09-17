@@ -3,23 +3,33 @@ import { Code, Database, Globe, Smartphone, Settings, Cloud } from "lucide-react
 const skillCategories = [
   {
     icon: Code,
-    title: "Frontend",
-    skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "HTML5", "CSS3", "JavaScript ES6+"]
+    title: "Programação",
+    skills: ["Python", "JavaScript", "HTML5", "CSS3", "SQL", "Git", "GitHub"]
   },
   {
     icon: Database,
-    title: "Backend",
-    skills: ["Node.js", "Express.js", "Python", "PostgreSQL", "MongoDB", "GraphQL", "REST APIs"]
-  },
-  {
-    icon: Cloud,
-    title: "DevOps & Cloud",
-    skills: ["AWS", "Docker", "Git", "GitHub Actions", "Vercel", "Linux", "CI/CD"]
+    title: "Backend & Automação",
+    skills: ["Node.js", "APIs REST", "Automação WhatsApp", "Chatbots", "Integração CRM"]
   },
   {
     icon: Settings,
-    title: "Ferramentas",
-    skills: ["VS Code", "Figma", "Postman", "Jest", "Cypress", "Webpack", "Vite"]
+    title: "Ferramentas & Office",
+    skills: ["Excel", "Word", "PowerPoint", "Notion", "VS Code", "Postman"]
+  },
+  {
+    icon: Smartphone,
+    title: "Hardware & Suporte",
+    skills: ["Manutenção PC", "Redes", "Suporte Técnico", "Linux", "Windows", "Hardware"]
+  },
+  {
+    icon: Globe,
+    title: "Marketing Digital",
+    skills: ["Google Maps", "SEO Local", "Perfis Empresariais", "Gestão Online"]
+  },
+  {
+    icon: Cloud,
+    title: "Idiomas & Soft Skills",
+    skills: ["Português (Nativo)", "Inglês (Intermediário)", "Trabalho em Equipe", "Comunicação"]
   }
 ];
 

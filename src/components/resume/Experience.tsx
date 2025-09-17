@@ -2,36 +2,36 @@ import { Calendar, Building2 } from "lucide-react";
 
 const experiences = [
   {
-    title: "Desenvolvedor Full Stack Sênior",
-    company: "TechCorp Solutions",
-    period: "Janeiro 2022 - Presente",
+    title: "Especialista em Automação WhatsApp Empresarial",
+    company: "Freelancer / Projetos Independentes",
+    period: "2023 - Presente",
     description: [
-      "Liderou o desenvolvimento de aplicações web complexas usando React, TypeScript e Node.js",
-      "Implementou arquiteturas escaláveis que aumentaram a performance em 40%",
-      "Mentoria de desenvolvedores júniores e coordenação de equipes ágeis",
-      "Integração com APIs RESTful e GraphQL, implementação de testes automatizados"
+      "Desenvolvimento de automações inteligentes para WhatsApp Business utilizando Python",
+      "Criação de chatbots personalizados com integração CRM para otimizar processos comerciais",
+      "Implementação de soluções que aumentaram a eficiência de comunicação empresarial em 70%",
+      "Gestão completa de fluxos de atendimento automatizado e follow-up de clientes"
     ]
   },
   {
-    title: "Desenvolvedor Frontend",
-    company: "StartupTech Brasil",
-    period: "Março 2021 - Dezembro 2021",
+    title: "Consultor Google Maps Empresarial",
+    company: "Marketing Digital / Freelancer",
+    period: "2023 - Presente",
     description: [
-      "Desenvolveu interfaces responsivas e interativas usando React e Tailwind CSS",
-      "Colaborou com designers UX/UI para criar experiências de usuário excepcionais",
-      "Otimizou aplicações para SEO e performance, resultando em 60% mais conversões",
-      "Implementou ferramentas de analytics e tracking para métricas de negócio"
+      "Criação e otimização de perfis empresariais no Google Maps para aumentar visibilidade local",
+      "Implementação de estratégias de SEO local que resultaram em +150% de visualizações",
+      "Gestão completa de informações empresariais, fotos profissionais e avaliações",
+      "Consultoria em marketing digital e presença online para pequenas e médias empresas"
     ]
   },
   {
-    title: "Desenvolvedor Web Júnior",
-    company: "Agência Digital Criativa",
-    period: "Junho 2020 - Fevereiro 2021",
+    title: "Técnico em Suporte e Hardware",
+    company: "Projetos Acadêmicos e Voluntários",
+    period: "2021 - 2023",
     description: [
-      "Criou websites e landing pages para diversos clientes usando HTML5, CSS3 e JavaScript",
-      "Implementou sistemas de gerenciamento de conteúdo (CMS) personalizados",
-      "Garantiu compatibilidade cross-browser e responsividade móvel",
-      "Trabalhou em equipe seguindo metodologias ágeis e versionamento Git"
+      "Manutenção preventiva e corretiva de computadores, servidores e equipamentos de rede",
+      "Suporte técnico presencial e remoto para sistemas Windows e Linux",
+      "Instalação e configuração de redes locais, roteadores e pontos de acesso",
+      "Diagnóstico e resolução de problemas de hardware, software e conectividade"
     ]
   }
 ];

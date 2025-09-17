@@ -8,39 +8,39 @@
 
 @layer base {
   :root {
-    /* Background Colors */
-    --background: 0 0% 100%;
-    --background-secondary: 210 17% 98%;
-    --foreground: 210 11% 15%;
-    --foreground-secondary: 215 14% 34%;
+    /* Paleta baseada na foto do Emmanuel */
+    --background: 0 0% 98%;
+    --background-secondary: 210 5% 96%;
+    --foreground: 210 15% 15%;
+    --foreground-secondary: 210 10% 45%;
 
     /* Card System */
     --card: 0 0% 100%;
-    --card-foreground: 210 11% 15%;
-    --card-border: 215 20% 90%;
+    --card-foreground: 210 15% 15%;
+    --card-border: 191 20% 85%;
 
-    /* Professional Blue Theme */
-    --primary: 210 100% 47%;
-    --primary-dark: 210 100% 42%;
-    --primary-light: 210 100% 85%;
+    /* Cores primárias - Azul vibrante da foto */
+    --primary: 191 100% 50%;
+    --primary-dark: 191 100% 35%;
+    --primary-light: 191 100% 70%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary Grays */
-    --secondary: 210 17% 95%;
-    --secondary-foreground: 215 14% 34%;
-    --muted: 210 17% 96%;
-    --muted-foreground: 215 14% 50%;
+    /* Cores secundárias - Cinza profissional da gravata */
+    --secondary: 210 10% 40%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 5% 96%;
+    --muted-foreground: 210 10% 45%;
 
     /* Accent Colors */
-    --accent: 210 17% 95%;
-    --accent-foreground: 210 11% 15%;
-    --accent-blue: 210 100% 52%;
+    --accent: 191 80% 60%;
+    --accent-foreground: 0 0% 100%;
+    --accent-blue: 191 100% 50%;
 
     /* Interactive Elements */
-    --border: 215 20% 90%;
-    --input: 215 20% 90%;
-    --ring: 210 100% 47%;
-    --hover-bg: 210 17% 98%;
+    --border: 191 20% 85%;
+    --input: 191 20% 85%;
+    --ring: 191 100% 50%;
+    --hover-bg: 191 15% 92%;
 
     /* Destructive */
     --destructive: 0 84.2% 60.2%;
@@ -48,7 +48,7 @@
 
     /* Popover */
     --popover: 0 0% 100%;
-    --popover-foreground: 210 11% 15%;
+    --popover-foreground: 210 15% 15%;
 
     --radius: 8px;
 
@@ -64,47 +64,47 @@
   }
 
   .dark {
-    /* Dark Theme Colors */
-    --background: 224 13% 10%;
-    --background-secondary: 224 13% 12%;
-    --foreground: 210 40% 98%;
-    --foreground-secondary: 215 20% 75%;
+    /* Modo escuro otimizado com a paleta do Emmanuel */
+    --background: 210 15% 8%;
+    --background-secondary: 210 15% 12%;
+    --foreground: 0 0% 95%;
+    --foreground-secondary: 210 5% 75%;
 
     /* Dark Card System */
-    --card: 224 13% 12%;
-    --card-foreground: 210 40% 98%;
-    --card-border: 224 13% 20%;
+    --card: 210 15% 10%;
+    --card-foreground: 0 0% 95%;
+    --card-border: 191 30% 25%;
 
-    /* Primary remains consistent */
-    --primary: 210 100% 52%;
-    --primary-dark: 210 100% 47%;
-    --primary-light: 210 100% 20%;
-    --primary-foreground: 0 0% 100%;
+    /* Primary remains accessible in dark mode */
+    --primary: 191 80% 60%;
+    --primary-dark: 191 80% 45%;
+    --primary-light: 191 80% 20%;
+    --primary-foreground: 210 15% 8%;
 
     /* Dark Secondary */
-    --secondary: 224 13% 15%;
-    --secondary-foreground: 215 20% 75%;
-    --muted: 224 13% 15%;
-    --muted-foreground: 215 20% 60%;
+    --secondary: 210 15% 25%;
+    --secondary-foreground: 0 0% 95%;
+    --muted: 210 15% 15%;
+    --muted-foreground: 210 5% 75%;
 
     /* Dark Accents */
-    --accent: 224 13% 15%;
-    --accent-foreground: 210 40% 98%;
-    --accent-blue: 210 100% 55%;
+    --accent: 191 60% 50%;
+    --accent-foreground: 0 0% 95%;
+    --accent-blue: 191 80% 60%;
 
     /* Dark Interactive */
-    --border: 224 13% 20%;
-    --input: 224 13% 20%;
-    --ring: 210 100% 52%;
-    --hover-bg: 224 13% 15%;
+    --border: 191 30% 25%;
+    --input: 191 30% 25%;
+    --ring: 191 80% 60%;
+    --hover-bg: 191 20% 15%;
 
     /* Destructive */
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 95%;
 
     /* Popover */
-    --popover: 224 13% 12%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 210 15% 10%;
+    --popover-foreground: 0 0% 95%;
 
     /* Dark Sidebar */
     --sidebar-background: 240 5.9% 10%;

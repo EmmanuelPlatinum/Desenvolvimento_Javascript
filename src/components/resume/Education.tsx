@@ -2,21 +2,39 @@ import { GraduationCap, Calendar } from "lucide-react";
 
 const education = [
   {
-    degree: "Bacharelado em Ciência da Computação",
-    institution: "Universidade Federal de São Paulo (UNIFESP)",
-    period: "2018 - 2022",
+    degree: "Bacharelado em Ciências da Computação",
+    institution: "Universidade Federal de Mato Grosso (UFMT)",
+    period: "2021 - 2025",
+    status: "6º Semestre - Cursando"
+  },
+  {
+    degree: "Ensino Médio Completo",
+    institution: "Escola Estadual de Mato Grosso",
+    period: "2016 - 2018",
     status: "Concluído"
   },
   {
-    degree: "Técnico em Informática",
-    institution: "ETEC São Paulo",
-    period: "2016 - 2017",
-    status: "Concluído"
+    degree: "Capacitação em Programação Python",
+    institution: "Cyber E-Dux Educação e Tecnologia",
+    period: "2023 - 450h",
+    status: "Certificação"
   },
   {
-    degree: "Certificação AWS Solutions Architect",
-    institution: "Amazon Web Services",
-    period: "2023",
+    degree: "Desenvolvimento Web Back-End",
+    institution: "SENAC MT",
+    period: "2022 - 96h",
+    status: "Certificação"
+  },
+  {
+    degree: "Programação para Robótica",
+    institution: "SENAC MT", 
+    period: "2022 - 60h",
+    status: "Certificação"
+  },
+  {
+    degree: "Qualificação em Hardware e Redes",
+    institution: "FEOSC-MT",
+    period: "2021 - 160h",
     status: "Certificação"
   }
 ];
