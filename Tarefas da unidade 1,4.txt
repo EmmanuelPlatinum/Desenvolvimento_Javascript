@@ -1,0 +1,507 @@
+Exercício 1: Mensagem de Boas-Vindas
+
+// Função que exibe a mensagem
+function exibirBoasVindas() {
+  // Você pode pegar o nome do usuário de um prompt ou de um login, por exemplo.
+  const nomeUsuario = "Visitante"; // Exemplo estático
+  alert(`Olá, ${nomeUsuario}! Seja bem-vindo(a) à nossa página.`);
+  console.log(`Olá, ${nomeUsuario}! Seja bem-vindo(a) à nossa página.`);
+}
+
+// Para executar quando a página carregar, você pode usar o window.onload
+window.onload = exibirBoasVindas;
+
+
+
+Exercício 2: Par ou Ímpar
+
+function ehPar(numero) {
+  return numero % 2 === 0;
+}
+
+// Exemplos de uso
+console.log("O número 10 é par?", ehPar(10)); // Saída: true
+console.log("O número 7 é par?", ehPar(7));   // Saída: false
+console.log("O número -4 é par?", ehPar(-4)); // Saída: true
+
+
+Claro! Aqui estão as resoluções para os exercícios em JavaScript, com explicações e exemplos de uso para cada um.
+
+Você pode copiar e colar este código em um arquivo HTML dentro de uma tag <script>, ou executar em um ambiente como o console do seu navegador.
+
+Exercício 1: Mensagem de Boas-Vindas
+Crie uma função que exiba uma mensagem de boas-vindas ao usuário quando a página for carregada.
+
+JavaScript
+
+// Função que exibe a mensagem
+function exibirBoasVindas() {
+  // Você pode pegar o nome do usuário de um prompt ou de um login, por exemplo.
+  const nomeUsuario = "Visitante"; // Exemplo estático
+  alert(`Olá, ${nomeUsuario}! Seja bem-vindo(a) à nossa página.`);
+  console.log(`Olá, ${nomeUsuario}! Seja bem-vindo(a) à nossa página.`);
+}
+
+// Para executar quando a página carregar, você pode usar o window.onload
+window.onload = exibirBoasVindas;
+Explicação: A função exibirBoasVindas mostra uma mensagem usando alert. A linha window.onload = exibirBoasVindas; garante que a função será chamada assim que todos os elementos da página forem carregados.
+
+Exercício 2: Par ou Ímpar
+Desenvolva uma função que receba um número como parâmetro e verifique se ele é par ou ímpar. Retorne true se for par e false se for ímpar.
+
+JavaScript
+
+function ehPar(numero) {
+  return numero % 2 === 0;
+}
+
+// Exemplos de uso
+console.log("O número 10 é par?", ehPar(10)); // Saída: true
+console.log("O número 7 é par?", ehPar(7));   // Saída: false
+console.log("O número -4 é par?", ehPar(-4)); // Saída: true
+Explicação: Utilizamos o operador de módulo (%), que retorna o resto de uma divisão. Se um número dividido por 2 tem resto 0, ele é par. A função retorna o resultado dessa comparação booleana (true ou false).
+
+
+
+
+
+
+Exercício 3: Média Aritmética de um Array
+
+function calcularMedia(numeros) {
+  // Verifica se o array está vazio para evitar divisão por zero
+  if (numeros.length === 0) {
+    return 0;
+  }
+  
+  // Soma todos os números do array usando o método reduce
+  const soma = numeros.reduce((acumulador, numeroAtual) => acumulador + numeroAtual, 0);
+  
+  // Divide a soma pela quantidade de elementos
+  return soma / numeros.length;
+}
+
+// Exemplos de uso
+const notasTurmaA = [8, 7, 9, 10, 6];
+console.log(`A média da Turma A é: ${calcularMedia(notasTurmaA)}`); // Saída: 8
+
+const outrasNotas = [10, 5.5, 8.5];
+console.log(`A média de outras notas é: ${calcularMedia(outrasNotas)}`); // Saída: 8
+
+
+Exercício 4: String em Caixa Alta
+
+function paraCaixaAlta(texto) {
+  return texto.toUpperCase();
+}
+
+// Exemplos de uso
+console.log(paraCaixaAlta("javascript é divertido!")); // Saída: JAVASCRIPT É DIVERTIDO!
+console.log(paraCaixaAlta("Olá, Mundo!"));          // Saída: OLÁ, MUNDO!
+
+
+
+
+Claro! Aqui estão as resoluções para os exercícios em JavaScript, com explicações e exemplos de uso para cada um.
+
+Você pode copiar e colar este código em um arquivo HTML dentro de uma tag <script>, ou executar em um ambiente como o console do seu navegador.
+
+
+
+
+
+Exercício 1: Mensagem de Boas-Vindas
+Crie uma função que exiba uma mensagem de boas-vindas ao usuário quando a página for carregada.
+
+JavaScript
+
+// Função que exibe a mensagem
+function exibirBoasVindas() {
+  // Você pode pegar o nome do usuário de um prompt ou de um login, por exemplo.
+  const nomeUsuario = "Visitante"; // Exemplo estático
+  alert(`Olá, ${nomeUsuario}! Seja bem-vindo(a) à nossa página.`);
+  console.log(`Olá, ${nomeUsuario}! Seja bem-vindo(a) à nossa página.`);
+}
+
+// Para executar quando a página carregar, você pode usar o window.onload
+window.onload = exibirBoasVindas;
+Explicação: A função exibirBoasVindas mostra uma mensagem usando alert. A linha window.onload = exibirBoasVindas; garante que a função será chamada assim que todos os elementos da página forem carregados.
+
+
+
+
+Exercício 2: Par ou Ímpar
+Desenvolva uma função que receba um número como parâmetro e verifique se ele é par ou ímpar. Retorne true se for par e false se for ímpar.
+
+JavaScript
+
+function ehPar(numero) {
+  return numero % 2 === 0;
+}
+
+// Exemplos de uso
+console.log("O número 10 é par?", ehPar(10)); // Saída: true
+console.log("O número 7 é par?", ehPar(7));   // Saída: false
+console.log("O número -4 é par?", ehPar(-4)); // Saída: true
+Explicação: Utilizamos o operador de módulo (%), que retorna o resto de uma divisão. Se um número dividido por 2 tem resto 0, ele é par. A função retorna o resultado dessa comparação booleana (true ou false).
+
+
+
+
+
+Exercício 3: Média Aritmética de um Array
+Implemente uma função que calcule a média aritmética de um array de números e retorne o resultado.
+
+JavaScript
+
+function calcularMedia(numeros) {
+  // Verifica se o array está vazio para evitar divisão por zero
+  if (numeros.length === 0) {
+    return 0;
+  }
+  
+  // Soma todos os números do array usando o método reduce
+  const soma = numeros.reduce((acumulador, numeroAtual) => acumulador + numeroAtual, 0);
+  
+  // Divide a soma pela quantidade de elementos
+  return soma / numeros.length;
+}
+
+// Exemplos de uso
+const notasTurmaA = [8, 7, 9, 10, 6];
+console.log(`A média da Turma A é: ${calcularMedia(notasTurmaA)}`); // Saída: 8
+
+const outrasNotas = [10, 5.5, 8.5];
+console.log(`A média de outras notas é: ${calcularMedia(outrasNotas)}`); // Saída: 8
+Explicação: A função primeiro verifica se o array está vazio. Depois, usa o método reduce para somar todos os elementos. Finalmente, divide a soma total pelo número de elementos para encontrar a média.
+
+
+
+
+
+Exercício 4: String em Caixa Alta
+Crie uma função que receba uma string e retorne a mesma string com todas as letras em caixa alta.
+
+JavaScript
+
+function paraCaixaAlta(texto) {
+  return texto.toUpperCase();
+}
+
+// Exemplos de uso
+console.log(paraCaixaAlta("javascript é divertido!")); // Saída: JAVASCRIPT É DIVERTIDO!
+console.log(paraCaixaAlta("Olá, Mundo!"));          // Saída: OLÁ, MUNDO!
+Explicação: A função utiliza o método nativo de strings .toUpperCase() que converte todos os caracteres da string para maiúsculas.
+
+
+
+Exercício 5: Número Primo
+
+function ehPrimo(numero) {
+  // Números menores ou iguais a 1 não são primos
+  if (numero <= 1) {
+    return false;
+  }
+
+  // Verifica divisores de 2 até a raiz quadrada do número
+  for (let i = 2; i <= Math.sqrt(numero); i++) {
+    if (numero % i === 0) {
+      // Se encontrar um divisor, não é primo
+      return false;
+    }
+  }
+
+  // Se não encontrar divisores, é primo
+  return true;
+}
+
+// Exemplos de uso
+console.log("O número 7 é primo?", ehPrimo(7));     // Saída: true
+console.log("O número 15 é primo?", ehPrimo(15));   // Saída: false
+console.log("O número 29 é primo?", ehPrimo(29));   // Saída: true
+console.log("O número 1 é primo?", ehPrimo(1));     // Saída: false
+
+
+
+
+Exercício 6: Inverter a Ordem de um Array
+
+function inverterArray(array) {
+  // O método reverse() inverte o array original.
+  // Para não modificar o original, criamos uma cópia com o spread operator (...)
+  return [...array].reverse();
+}
+
+// Exemplos de uso
+const numeros = [1, 2, 3, 4, 5];
+const numerosInvertidos = inverterArray(numeros);
+console.log("Array original:", numeros);             // Saída: [1, 2, 3, 4, 5]
+console.log("Array invertido:", numerosInvertidos); // Saída: [5, 4, 3, 2, 1]
+
+const letras = ['a', 'b', 'c'];
+console.log("Letras invertidas:", inverterArray(letras)); // Saída: ['c', 'b', 'a']
+
+
+
+
+
+Exercício 7: Acréscimo de Porcentagem
+
+function calcularAumento(valor, porcentagem) {
+  const aumento = valor * (porcentagem / 100);
+  return valor + aumento;
+}
+
+// Exemplos de uso
+console.log("R$ 100 com 15% de aumento:", calcularAumento(100, 15)); // Saída: 115
+console.log("R$ 500 com 10% de aumento:", calcularAumento(500, 10)); // Saída: 550
+
+
+
+
+Exercício 8: Palíndromo
+
+function ehPalindromo(palavra) {
+  // Converte a palavra para minúsculas para uma comparação sem case-sensitive
+  const palavraFormatada = palavra.toLowerCase();
+  
+  // Inverte a palavra
+  const palavraInvertida = palavraFormatada.split('').reverse().join('');
+  
+  // Compara a palavra formatada com a sua versão invertida
+  return palavraFormatada === palavraInvertida;
+}
+
+// Exemplos de uso
+console.log("A palavra 'arara' é um palíndromo?", ehPalindromo("arara")); // Saída: true
+console.log("A palavra 'javascript' é um palíndromo?", ehPalindromo("javascript")); // Saída: false
+console.log("A palavra 'ovo' é um palíndromo?", ehPalindromo("Ovo")); // Saída: true
+
+
+
+Claro! Aqui estão as resoluções para os exercícios em JavaScript, com explicações e exemplos de uso para cada um.
+
+Você pode copiar e colar este código em um arquivo HTML dentro de uma tag <script>, ou executar em um ambiente como o console do seu navegador.
+
+Exercício 1: Mensagem de Boas-Vindas
+Crie uma função que exiba uma mensagem de boas-vindas ao usuário quando a página for carregada.
+
+JavaScript
+
+// Função que exibe a mensagem
+function exibirBoasVindas() {
+  // Você pode pegar o nome do usuário de um prompt ou de um login, por exemplo.
+  const nomeUsuario = "Visitante"; // Exemplo estático
+  alert(`Olá, ${nomeUsuario}! Seja bem-vindo(a) à nossa página.`);
+  console.log(`Olá, ${nomeUsuario}! Seja bem-vindo(a) à nossa página.`);
+}
+
+// Para executar quando a página carregar, você pode usar o window.onload
+window.onload = exibirBoasVindas;
+Explicação: A função exibirBoasVindas mostra uma mensagem usando alert. A linha window.onload = exibirBoasVindas; garante que a função será chamada assim que todos os elementos da página forem carregados.
+
+Exercício 2: Par ou Ímpar
+Desenvolva uma função que receba um número como parâmetro e verifique se ele é par ou ímpar. Retorne true se for par e false se for ímpar.
+
+JavaScript
+
+function ehPar(numero) {
+  return numero % 2 === 0;
+}
+
+// Exemplos de uso
+console.log("O número 10 é par?", ehPar(10)); // Saída: true
+console.log("O número 7 é par?", ehPar(7));   // Saída: false
+console.log("O número -4 é par?", ehPar(-4)); // Saída: true
+Explicação: Utilizamos o operador de módulo (%), que retorna o resto de uma divisão. Se um número dividido por 2 tem resto 0, ele é par. A função retorna o resultado dessa comparação booleana (true ou false).
+
+Exercício 3: Média Aritmética de um Array
+Implemente uma função que calcule a média aritmética de um array de números e retorne o resultado.
+
+JavaScript
+
+function calcularMedia(numeros) {
+  // Verifica se o array está vazio para evitar divisão por zero
+  if (numeros.length === 0) {
+    return 0;
+  }
+  
+  // Soma todos os números do array usando o método reduce
+  const soma = numeros.reduce((acumulador, numeroAtual) => acumulador + numeroAtual, 0);
+  
+  // Divide a soma pela quantidade de elementos
+  return soma / numeros.length;
+}
+
+// Exemplos de uso
+const notasTurmaA = [8, 7, 9, 10, 6];
+console.log(`A média da Turma A é: ${calcularMedia(notasTurmaA)}`); // Saída: 8
+
+const outrasNotas = [10, 5.5, 8.5];
+console.log(`A média de outras notas é: ${calcularMedia(outrasNotas)}`); // Saída: 8
+Explicação: A função primeiro verifica se o array está vazio. Depois, usa o método reduce para somar todos os elementos. Finalmente, divide a soma total pelo número de elementos para encontrar a média.
+
+Exercício 4: String em Caixa Alta
+Crie uma função que receba uma string e retorne a mesma string com todas as letras em caixa alta.
+
+JavaScript
+
+function paraCaixaAlta(texto) {
+  return texto.toUpperCase();
+}
+
+// Exemplos de uso
+console.log(paraCaixaAlta("javascript é divertido!")); // Saída: JAVASCRIPT É DIVERTIDO!
+console.log(paraCaixaAlta("Olá, Mundo!"));          // Saída: OLÁ, MUNDO!
+Explicação: A função utiliza o método nativo de strings .toUpperCase() que converte todos os caracteres da string para maiúsculas.
+
+Exercício 5: Número Primo
+Desenvolva uma função que determine se um número é primo ou não. Retorne true se for primo e false se não for.
+
+JavaScript
+
+function ehPrimo(numero) {
+  // Números menores ou iguais a 1 não são primos
+  if (numero <= 1) {
+    return false;
+  }
+
+  // Verifica divisores de 2 até a raiz quadrada do número
+  for (let i = 2; i <= Math.sqrt(numero); i++) {
+    if (numero % i === 0) {
+      // Se encontrar um divisor, não é primo
+      return false;
+    }
+  }
+
+  // Se não encontrar divisores, é primo
+  return true;
+}
+
+// Exemplos de uso
+console.log("O número 7 é primo?", ehPrimo(7));     // Saída: true
+console.log("O número 15 é primo?", ehPrimo(15));   // Saída: false
+console.log("O número 29 é primo?", ehPrimo(29));   // Saída: true
+console.log("O número 1 é primo?", ehPrimo(1));     // Saída: false
+Explicação: Um número primo é divisível apenas por 1 e por ele mesmo. A função testa se o número tem algum divisor entre 2 e sua raiz quadrada. Se encontrar algum, o número não é primo.
+
+Exercício 6: Inverter a Ordem de um Array
+Implemente uma função que inverta a ordem dos elementos em um array.
+
+JavaScript
+
+function inverterArray(array) {
+  // O método reverse() inverte o array original.
+  // Para não modificar o original, criamos uma cópia com o spread operator (...)
+  return [...array].reverse();
+}
+
+// Exemplos de uso
+const numeros = [1, 2, 3, 4, 5];
+const numerosInvertidos = inverterArray(numeros);
+console.log("Array original:", numeros);             // Saída: [1, 2, 3, 4, 5]
+console.log("Array invertido:", numerosInvertidos); // Saída: [5, 4, 3, 2, 1]
+
+const letras = ['a', 'b', 'c'];
+console.log("Letras invertidas:", inverterArray(letras)); // Saída: ['c', 'b', 'a']
+Explicação: A função usa o método .reverse(), que inverte os elementos de um array. Para evitar a modificação do array original (uma boa prática), primeiro criamos uma cópia dele usando [...array].
+
+Exercício 7: Acréscimo de Porcentagem
+Crie uma função que receba um valor e uma porcentagem. A função deve retornar o valor acrescido da porcentagem indicada.
+
+JavaScript
+
+function calcularAumento(valor, porcentagem) {
+  const aumento = valor * (porcentagem / 100);
+  return valor + aumento;
+}
+
+// Exemplos de uso
+console.log("R$ 100 com 15% de aumento:", calcularAumento(100, 15)); // Saída: 115
+console.log("R$ 500 com 10% de aumento:", calcularAumento(500, 10)); // Saída: 550
+Explicação: A função calcula o valor do aumento multiplicando o valor base pela porcentagem (dividida por 100) e depois soma esse aumento ao valor original.
+
+Exercício 8: Palíndromo
+Desenvolva uma função que verifique se uma palavra é um palíndromo.
+
+JavaScript
+
+function ehPalindromo(palavra) {
+  // Converte a palavra para minúsculas para uma comparação sem case-sensitive
+  const palavraFormatada = palavra.toLowerCase();
+  
+  // Inverte a palavra
+  const palavraInvertida = palavraFormatada.split('').reverse().join('');
+  
+  // Compara a palavra formatada com a sua versão invertida
+  return palavraFormatada === palavraInvertida;
+}
+
+// Exemplos de uso
+console.log("A palavra 'arara' é um palíndromo?", ehPalindromo("arara")); // Saída: true
+console.log("A palavra 'javascript' é um palíndromo?", ehPalindromo("javascript")); // Saída: false
+console.log("A palavra 'ovo' é um palíndromo?", ehPalindromo("Ovo")); // Saída: true
+Explicação: A função converte a string para minúsculas, a divide em um array de caracteres (split), inverte esse array (reverse) e o junta novamente em uma string (join). Por fim, compara a string original com a invertida.
+
+
+
+
+
+
+
+Exercício 9: Representação Binária
+
+
+function paraBinario(numero) {
+  // O método toString(2) converte um número para sua representação em base 2 (binária)
+  return numero.toString(2);
+}
+
+// Exemplos de uso
+console.log("O binário de 10 é:", paraBinario(10)); // Saída: 1010
+console.log("O binário de 25 é:", paraBinario(25)); // Saída: 11001
+console.log("O binário de 2 é:", paraBinario(2));   // Saída: 10
+
+
+
+
+
+Exercício 10: Fatorial de um Número
+
+function calcularFatorial(numero) {
+  // Casos base: fatorial de 0 e 1 é 1. Números negativos não têm fatorial definido.
+  if (numero < 0) {
+    return "Não é possível calcular o fatorial de um número negativo.";
+  }
+  if (numero === 0 || numero === 1) {
+    return 1;
+  }
+
+  // Lógica para calcular o fatorial
+  let resultado = 1;
+  for (let i = 2; i <= numero; i++) {
+    resultado *= i;
+  }
+  
+  return resultado;
+}
+
+// Exemplos de uso
+console.log("O fatorial de 5 é:", calcularFatorial(5));   // Saída: 120 (5*4*3*2*1)
+console.log("O fatorial de 0 é:", calcularFatorial(0));   // Saída: 1
+console.log("O fatorial de 7 é:", calcularFatorial(7));   // Saída: 5040
+console.log("O fatorial de -3 é:", calcularFatorial(-3)); // Saída: "Não é possível calcular o fatorial de um número negativo."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
