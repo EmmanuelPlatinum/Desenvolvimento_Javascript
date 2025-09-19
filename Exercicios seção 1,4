@@ -1,0 +1,415 @@
+Exercício 1 – [Variáveis e Tipos]
+
+// var (escopo de função, pode ser redeclarado)
+var nome = "João";
+
+// let (escopo de bloco, não pode ser redeclarado no mesmo escopo)
+let idade = 30; // number
+let possuiCNH = true; // boolean
+
+// const (escopo de bloco, valor constante, não pode ser reatribuído)
+const PI = 3.14159;
+
+// Outros tipos primitivos
+let corFavorita; // undefined (nenhum valor atribuído)
+let sobrenome = null; // null (valor nulo, definido intencionalmente)
+
+console.log("var (string):", nome);
+console.log("let (number):", idade);
+console.log("let (boolean):", possuiCNH);
+console.log("const (number):", PI);
+console.log("undefined:", corFavorita);
+console.log("null:", sobrenome);
+
+
+
+
+Exercício 2 – [Operadores Aritméticos]
+
+const num1 = 15;
+const num2 = 4;
+
+const soma = num1 + num2;
+const subtracao = num1 - num2;
+const multiplicacao = num1 * num2;
+const divisao = num1 / num2;
+const resto = num1 % num2;
+
+console.log(`Soma: ${num1} + ${num2} = ${soma}`);
+console.log(`Subtração: ${num1} - ${num2} = ${subtracao}`);
+console.log(`Multiplicação: ${num1} * ${num2} = ${multiplicacao}`);
+console.log(`Divisão: ${num1} / ${num2} = ${divisao}`);
+console.log(`Resto: ${num1} % ${num2} = ${resto}`);
+
+
+
+
+
+Exercício 3 – [Operadores de Comparação]
+
+const a = 10;
+const b = "10";
+
+// Compara apenas o valor (igualdade solta)
+if (a == b) {
+  console.log(`'${a}' e '${b}' são iguais em valor.`);
+} else {
+  console.log(`'${a}' e '${b}' não são iguais em valor.`);
+}
+
+// Compara valor E tipo (igualdade estrita)
+if (a === b) {
+  console.log(`'${a}' e '${b}' são estritamente iguais (valor e tipo).`);
+} else {
+  console.log(`'${a}' e '${b}' não são estritamente iguais, pois seus tipos são diferentes.`);
+}
+
+
+
+
+
+Exercício 4 – [Condicional if/else]
+
+
+
+// Para executar no navegador, use prompt. Em ambientes como Node.js, a entrada é diferente.
+// const idade = parseInt(prompt("Digite sua idade:"));
+
+const idade = 25; // Exemplo para console
+
+if (idade < 18) {
+  console.log("Você é menor de idade.");
+} else if (idade >= 18 && idade <= 65) {
+  console.log("Você é maior de idade.");
+} else {
+  console.log("Você é considerado(a) idoso(a).");
+}
+
+
+
+
+Exercício 5 – [Operador Ternário]
+
+
+const idade = 20;
+
+const status = idade >= 18 ? "Maior de idade" : "Menor de idade";
+
+console.log(`Com ${idade} anos, você é: ${status}.`);
+
+
+
+
+
+Exercício 6 – [Laço for]
+
+
+console.log("Contando de 1 a 10:");
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}
+
+
+
+
+
+Exercício 7 – [Laço while e do...while]
+
+// Usando while
+let contadorWhile = 1;
+console.log("Contagem com while:");
+while (contadorWhile <= 5) {
+  console.log(contadorWhile);
+  contadorWhile++;
+}
+
+// Usando do...while
+let contadorDoWhile = 1;
+console.log("\nContagem com do...while:");
+do {
+  console.log(contadorDoWhile);
+  contadorDoWhile++;
+} while (contadorDoWhile <= 5);
+
+console.log("\nDiferença: O 'while' verifica a condição ANTES de executar o bloco. Se a condição for falsa no início, o bloco nunca executa. O 'do...while' executa o bloco PELO MENOS UMA VEZ e só então verifica a condição.");
+
+
+
+
+
+Exercício 8 – [Funções Simples]
+
+
+
+function saudacao(nome) {
+  return `Olá, ${nome}! Seja bem-vindo(a).`;
+}
+
+// Exemplo de uso
+const mensagem = saudacao("Ana");
+console.log(mensagem); // Saída: Olá, Ana! Seja bem-vindo(a).
+
+
+
+
+
+Exercício 9 – [Funções como Literais]
+
+
+const calcularAreaTriangulo = function(base, altura) {
+  return (base * altura) / 2;
+};
+
+// Exemplo de uso
+const area = calcularAreaTriangulo(10, 5);
+console.log(`A área do triângulo é: ${area}`); // Saída: 25
+
+
+
+Exercício 10 – [Arrays e Métodos]
+
+
+let frutas = ["Maçã", "Banana", "Laranja", "Uva", "Manga"];
+console.log("Array original:", frutas);
+
+// .push() adiciona um item ao final
+frutas.push("Morango");
+console.log("Após .push('Morango'):", frutas);
+
+// .pop() remove o último item
+const frutaRemovida = frutas.pop();
+console.log("Após .pop():", frutas);
+console.log("Fruta removida:", frutaRemovida);
+
+// .slice() cria um novo array com uma parte do original
+const algumasFrutas = frutas.slice(1, 4); // Pega do índice 1 até o 3 (4 é exclusivo)
+console.log("Resultado de .slice(1, 4):", algumasFrutas);
+
+// .join() junta os elementos em uma string
+const listaDeFrutas = frutas.join(", ");
+console.log("Resultado de .join(', '):", listaDeFrutas);
+
+
+
+
+
+Exercício 11 – [Objeto Literal]
+
+
+const carro = {
+  modelo: "Fiat Argo",
+  ano: 2023,
+  motor: "1.0"
+};
+
+
+
+
+
+Exercício 12 – [Métodos em Objetos]
+
+
+const carro = {
+  modelo: "Fiat Argo",
+  ano: 2023,
+  motor: 1.0,
+  consumo: function(km) {
+    let kmPorLitro;
+    if (this.motor <= 1.0) {
+      kmPorLitro = 14;
+    } else if (this.motor > 1.0 && this.motor <= 1.6) {
+      kmPorLitro = 11;
+    } else {
+      kmPorLitro = 9;
+    }
+    const litrosConsumidos = km / kmPorLitro;
+    return `Para percorrer ${km}km, o consumo estimado é de ${litrosConsumidos.toFixed(2)} litros.`;
+  }
+};
+
+console.log(carro.consumo(250));
+
+
+
+
+
+
+Exercício 13 – [Manipulação de Strings]
+
+
+
+const frase = "Aprendendo JavaScript para o desenvolvimento web.";
+
+// .charAt() - Pega o caractere em uma posição
+console.log("Caractere no índice 0:", frase.charAt(0)); // 'A'
+
+// .indexOf() - Encontra a primeira ocorrência de um texto
+console.log("Índice de 'JavaScript':", frase.indexOf("JavaScript")); // 10
+
+// .toUpperCase() - Converte para maiúsculas
+console.log("Frase em maiúsculas:", frase.toUpperCase());
+
+// .replace() - Substitui um trecho da string
+const novaFrase = frase.replace("web", "mobile");
+console.log("Frase com substituição:", novaFrase);
+
+
+
+
+
+
+Exercício 14 – [Função com Argumento de Função]
+
+// Função principal que recebe um número e uma função (callback)
+function aplicarOperacao(numero, operacaoCallback) {
+  return operacaoCallback(numero);
+}
+
+// Funções que serão passadas como argumento
+const dobrar = (num) => num * 2;
+const aoQuadrado = (num) => num * num;
+
+// Usando a função principal
+console.log("Dobro de 5:", aplicarOperacao(5, dobrar)); // Saída: 10
+console.log("5 ao quadrado:", aplicarOperacao(5, aoQuadrado)); // Saída: 25
+
+
+
+
+
+Exercício 15 – [Manipulação do DOM]
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício DOM</title>
+</head>
+<body>
+    <div id="msg">Texto inicial.</div>
+    <button id="btnMudar">Clique para Mudar</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+Exercício 16 – [Criação Dinâmica de Elementos]
+
+
+
+// Este código deve ser executado em um arquivo JS ligado a um HTML
+
+// Cria um novo elemento <p>
+const novoParagrafo = document.createElement('p');
+
+// Define o conteúdo de texto do parágrafo
+novoParagrafo.textContent = "Este parágrafo foi criado e adicionado dinamicamente com JavaScript!";
+
+// Adiciona o novo parágrafo ao final do <body>
+document.body.appendChild(novoParagrafo);
+
+
+
+
+
+
+
+
+Exercício 17 – [Função com Propriedade Prototype]
+
+
+// Função Construtora
+function Pessoa(nome, idade) {
+  this.nome = nome;
+  this.idade = idade;
+}
+
+// Adicionando um método ao prototype de Pessoa
+Pessoa.prototype.falar = function() {
+  console.log(`Olá, meu nome é ${this.nome} e eu tenho ${this.idade} anos.`);
+};
+
+// Criando uma nova instância (objeto) de Pessoa
+const joana = new Pessoa("Joana", 28);
+const pedro = new Pessoa("Pedro", 35);
+
+// Chamando o método que está no prototype
+joana.falar();
+pedro.falar();
+
+
+
+
+Exercício 18 – [Tratamento de Exceções]
+
+
+function calcularRaizQuadrada(numero) {
+  if (numero < 0) {
+    // Lança uma exceção se a condição não for atendida
+    throw new Error("Não é possível calcular a raiz quadrada de um número negativo.");
+  }
+  return Math.sqrt(numero);
+}
+
+// Tentando executar o código
+try {
+  console.log("Calculando a raiz de 25:", calcularRaizQuadrada(25));
+  console.log("Calculando a raiz de -9...");
+  console.log(calcularRaizQuadrada(-9)); // Esta linha vai gerar o erro
+} catch (erro) {
+  // Captura o erro e trata-o
+  console.error("Ocorreu um erro:", erro.message);
+} finally {
+  // Este bloco é executado independentemente de haver erro ou não
+  console.log("Bloco de tentativa/captura finalizado.");
+}
+
+
+
+
+Exercício 19 – [XMLHttpRequest Simples]
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Exercício AJAX</title>
+</head>
+<body>
+    <button id="carregarTxt">Carregar Dados</button>
+    <div id="conteudo"></div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+console.log("Objeto completo:", carro);
+console.log("Modelo do carro:", carro.modelo);
+console.log("Ano:", carro.ano);
+
+
+
+
+
+Exercício 20 – [Mini Projeto Ajax + DOM]
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Notícias AJAX</title>
+</head>
+<body>
+    <h1>Últimas Notícias</h1>
+    <button id="carregarNoticias">Carregar Notícias</button>
+    <div id="noticias-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
