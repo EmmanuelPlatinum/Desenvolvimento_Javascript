@@ -5,6 +5,7 @@ import { Summary } from "@/components/resume/Summary";
 import { Experience } from "@/components/resume/Experience";
 import { Education } from "@/components/resume/Education";
 import { Skills } from "@/components/resume/Skills";
+import { TechnicalArticle } from "@/components/TechnicalArticle";
 
 const Index = () => {
   useEffect(() => {
@@ -48,6 +49,9 @@ const Index = () => {
           </div>
           <div style={{ '--delay': 4 } as React.CSSProperties}>
             <Skills />
+          </div>
+          <div style={{ '--delay': 5 } as React.CSSProperties}>
+            <TechnicalArticle />
           </div>
         </div>
         
